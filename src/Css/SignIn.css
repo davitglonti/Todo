@@ -100,3 +100,21 @@ background: #5EFC8D 0% 0% no-repeat padding-box;
 border-radius: 4px;
 opacity: 1;
    }
+
+   @media only screen and (max-width: 1200px) {
+   
+    .form {
+        position: absolute;
+       top:120px;
+       background-color: #FFFFFF;
+       width:100%;
+       height: 70vh;
+       left: 0;
+       justify-content: center;
+      
+      /* UI Properties */
+      
+      border-radius: 4px;
+      opacity: 1;
+      }
+  }

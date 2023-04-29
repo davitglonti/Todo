@@ -5,19 +5,17 @@ import addImage from '../images/addPhoto.png'
 const SignIn = () => {
 const [image,setImage]=useState('')
 const [name,setName]=useState('')
-
+  
 //add image function
 const onImageChange=(e)=>{
     setImage(e.target.files[0])
-    
+    console.log(e.target.files[0])
+    localStorage.setItem('saveimage', JSON.stringify(e.target.files[0].name))
 }
-const SignIn = () => {
+const Signin = () => {
     if(name && image){
-        const reader = new FileReader();
-
-    reader.readAsDataURL(image);
         localStorage.setItem("saveinfo", JSON.stringify({name}));
-        localStorage.setItem("saveimage", JSON.stringify({reader}));
+        
     }
 }
 console.log(image.File)
@@ -36,7 +34,7 @@ console.log(image.File)
               </div>
             <h3 className='nametxt'> Fill in you Name</h3>
             <input type='text' className='nameInput' onChange={(e)=>setName(e.target.value)}/>
-            {name && image ?   <Link to={'/todoList'}> <button className='signIn'  onClick={SignIn}> Sign In</button></Link>: <button className='signIn'  onClick={SignIn}> Sign In</button>}
+            {name && image ?   <Link to={'/todoList'}> <button className='signIn'  onClick={Signin}> Sign In</button></Link>: <button className='signIn'  onClick={SignIn}> Sign In</button>}
            
         </form>
     </div>

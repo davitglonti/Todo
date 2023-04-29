@@ -1,0 +1,22 @@
+.taskInput {
+    position:relative;
+    
+    width: 487px;
+    height: 76px;
+    /* UI Properties */
+    background: var(--unnamed-color-e6ebff) 0% 0% no-repeat padding-box;
+    background: #E6EBFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+}
+.taskAdd {
+    position: relative;
+    
+    width: 108px;
+    height: 76px;
+    /* UI Properties */
+    background: var(--unnamed-color-5efc8d) 0% 0% no-repeat padding-box;
+    background: #5EFC8D 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+}

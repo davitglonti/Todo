@@ -1,0 +1,55 @@
+.todolist {
+    position: relative;
+    top: 34px;
+left: 36%;
+width: 595px;
+height: 54px;
+/* UI Properties */
+background: var(--unnamed-color-000000) 0% 0% no-repeat padding-box;
+background: #000000 0% 0% no-repeat padding-box;
+border-radius: 4px;
+opacity: 1;
+margin-bottom: 10px;
+display: flex;
+justify-content: space-between;
+}
+
+.todolistWhite{
+    background-color: #e1cdcd;
+}
+.todolistinfo {
+    position: absolute;
+    top:-3%;
+left: 3%;
+width: 116px;
+height: 31px;
+/* UI Properties */
+color: var(--unnamed-color-ffffff);
+text-align: left;
+font: normal normal 300 22px/33px Poppins;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: capitalize;
+opacity: 1;
+
+}
+.doneElement {
+    position: absolute;
+    top: 15px;
+    right: 9%;
+    width: 25px;
+    height: 18px;
+    /* UI Properties */
+    
+    opacity: 1;
+}
+.delElement {
+    position: absolute;
+    top: 12px;
+    right: 2%;
+width: 24px;
+height: 27px;
+/* UI Properties */
+
+opacity: 1;
+}
