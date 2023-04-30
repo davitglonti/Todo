@@ -10,8 +10,7 @@ background: #000000 0% 0% no-repeat padding-box;
 border-radius: 4px;
 opacity: 1;
 margin-bottom: 10px;
-display: flex;
-justify-content: space-between;
+
 }
 
 .todolistWhite{
@@ -53,3 +52,29 @@ height: 27px;
 
 opacity: 1;
 }
+
+@media only screen and (max-width: 1000px) {
+    .todolist {
+        position: relative;
+       
+        top: 20px;
+        right: 0%;
+    left: 0%;
+    width:100%;
+    
+    }
+  }
+  
+  @media only screen and (max-width: 1800px) {
+    .todolist {
+        position: relative;
+       
+        top: 20px;
+        right: 10%;
+    left: 1%;
+    
+    width:100%;
+    
+    }
+  }
+ 

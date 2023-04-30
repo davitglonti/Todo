@@ -5,17 +5,22 @@ import addImage from '../images/addPhoto.png'
 const SignIn = () => {
 const [image,setImage]=useState('')
 const [name,setName]=useState('')
-  
-//add image function
+  const Image = JSON.stringify(window.localStorage.getItem('image'))
+  //add image function
 const onImageChange=(e)=>{
     setImage(e.target.files[0])
-    console.log(e.target.files[0])
-    localStorage.setItem('saveimage', JSON.stringify(e.target.files[0].name))
+    const file = e.target.files[0];
+    const reader = new FileReader();
+  console.log(e.target.value);
+ reader.onload = () => {
+  localStorage.setItem('image', reader.result);
+};
+reader.readAsDataURL(file);
 }
 const Signin = () => {
     if(name && image){
         localStorage.setItem("saveinfo", JSON.stringify({name}));
-        
+        localStorage.setItem("LogIn", JSON.stringify(true));
     }
 }
 console.log(image.File)

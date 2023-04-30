@@ -9,6 +9,15 @@
     border-radius: 4px;
     opacity: 1;
 }
+.headerImage {
+position: absolute;
+top: 2%;
+right: 2%;
+width: 68px;
+height: 68px;
+border-radius:50%;
+cursor: pointer;
+}
 .taskAdd {
     position: relative;
     
