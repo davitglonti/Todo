@@ -11,7 +11,7 @@ const ErrorPage = () => {
       <span className="zero"><span className="screen-reader-text">0</span></span>
       <span className="four"><span className="screen-reader-text">4</span></span>
     </section>
-    <div className="link-container">
+    <div className="link-container">   
      <Link to={'http://localhost:3000/SignIn'} className="more-link"> Back To Previous Page </Link> 
     </div>
   </div>

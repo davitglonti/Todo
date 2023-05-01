@@ -1,7 +1,7 @@
 .todolist {
     position: relative;
     top: 34px;
-left: 36%;
+left: 34.6%;
 width: 595px;
 height: 54px;
 /* UI Properties */
@@ -53,28 +53,16 @@ height: 27px;
 opacity: 1;
 }
 
-@media only screen and (max-width: 1000px) {
-    .todolist {
-        position: relative;
-       
-        top: 20px;
-        right: 0%;
-    left: 0%;
-    width:100%;
-    
-    }
-  }
+
   
   @media only screen and (max-width: 1800px) {
     .todolist {
         position: relative;
        
         top: 20px;
-        right: 10%;
-    left: 1%;
-    
-    width:100%;
-    
+        left: 25%;
+        
+        width:50%;
     }
   }
  

@@ -12,11 +12,12 @@
    
    .form {
      position: relative;
-    top:80px;
+    top:150px;
     background-color: #FFFFFF;
-    width:577px;
+    width:30%;
+  
     height: 70vh;
-    left: 700px;
+    left: 35%;
    /* UI Properties */
    
    border-radius: 4px;
@@ -25,7 +26,7 @@
    .getStarted {
    position:absolute;
     top: 40px;
-    left: 170px;
+    left: 30%;
 width: 277px;
 height: 67px;
 /* UI Properties */
@@ -37,23 +38,15 @@ color: #000000;
 text-transform: capitalize;
 opacity: 1;
    }
-   .imagesection{
-    position: relative;
-    top: 280px;
-left: 40%;
-width: 122px;
-height: 50px;
-/* UI Properties */
-background: var(--unnamed-color-e6ebff) 0% 0% no-repeat padding-box;
-background: #E6EBFF 0% 0% no-repeat padding-box;
-opacity: 1;
-   }
+  
    .addimage {
     position: absolute;
-    top: 0;
-left: 34%;
-width: 44px;
-height: 40px;
+    top: 37%;
+left: 44%;
+color: transparent;
+width: 122px;
+height: 122px;
+border-radius: 50%;
 
 /* UI Properties */
 background: transparent url('../images/addPhoto.png') 0% 0% no-repeat padding-box;
@@ -63,6 +56,7 @@ opacity: 1;
     position: absolute;
     top: 400px;
 left: 38%;
+
 width: 164px;
 height: 31px;
 /* UI Properties */
@@ -76,7 +70,7 @@ opacity: 1;
    }
    .nameInput{
     position: absolute;
-    top: 500px;
+    top: 70%;
 left: 8%;
 width: 487px;
 height: 76px;
@@ -87,11 +81,11 @@ border-radius: 4px;
 opacity: 1;
 font-size: 30px;
    }
-   .signIn {
+   .signInbtn {
     position: absolute;
     background-color: #5EFC8D;
-    top: 650px;
-left: 25%;
+    top: 85%;
+left: 30%;
 width: 258px;
 height: 66px;
 /* UI Properties */
@@ -101,15 +95,34 @@ border-radius: 4px;
 opacity: 1;
    }
 
+   input[type=file]::file-selector-button {
+    background-color: #fff;
+    color: #000;
+    border: 0px;
+    border-right: 1px solid #e5e5e5;
+    padding: 10px 15px;
+    margin-right: 20px;
+    transition: .5s;
+    display: hidden;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background-color: #eee;
+    border: 0px;
+    border-right: 1px solid #e5e5e5;
+  }
+
    @media only screen and (max-width: 1200px) {
    
     .form {
         position: absolute;
        top:120px;
        background-color: #FFFFFF;
-       width:100%;
+    
+       width:500px;
        height: 70vh;
-       left: 0;
+       left: 15%;
+      
        justify-content: center;
       
       /* UI Properties */
@@ -117,4 +130,32 @@ opacity: 1;
       border-radius: 4px;
       opacity: 1;
       }
+      .nameInput{
+        position: absolute;
+        top: 500px;
+    left: 8%;
+    width: 417px;
+    height: 76px;
+    /* UI Properties */
+    background: var(--unnamed-color-e6ebff) 0% 0% no-repeat padding-box;
+    background: #E6EBFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    font-size: 30px;
+       }
+       .getStarted {
+        position:absolute;
+         top: 40px;
+         left: 30%;
+     width: 277px;
+     height: 67px;
+     /* UI Properties */
+     color: var(--unnamed-color-000000);
+     text-align: left;
+     font: normal normal 600 48px/72px Poppins;
+     letter-spacing: 0px;
+     color: #000000;
+     text-transform: capitalize;
+     opacity: 1;
+        }
   }
