@@ -55,14 +55,25 @@ opacity: 1;
 
 
   
-  @media only screen and (max-width: 1800px) {
+
+  @media only screen and (max-width: 900px) {
     .todolist {
         position: relative;
        
         top: 20px;
-        left: 25%;
+        left: 14%;
         
-        width:50%;
+        width:72%;
+    }
+    .doneElement {
+        position: absolute;
+        top: 15px;
+        right: 11%;
+        width: 25px;
+        height: 18px;
+        /* UI Properties */
+        
+        opacity: 1;
     }
   }
  

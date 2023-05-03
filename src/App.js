@@ -4,14 +4,11 @@ import Landing from './pages/landing';
 import SignIn from './pages/signIn';
 import TodoList from './pages/todoList';
 import ErrorPage from './pages/ErrorPage';
+
 function App() {
-  const name = localStorage.getItem("saveinfo");
-  const image = localStorage.getItem("image");
-  const bool = false
 const SaveLogin = localStorage.getItem("LogIn");
     
-console.log(SaveLogin)
-  
+
   return (
     <div className="App">
        <Router>

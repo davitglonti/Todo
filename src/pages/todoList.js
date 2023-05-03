@@ -2,6 +2,8 @@ import React,{useEffect, useState} from 'react'
 import TodoHeader from '../components/TodoHeader';
 import '../Css/Todo.css'
 import List from '../components/List';
+
+
 const TodoList = () => {
   const [textVal,setTextVal]=useState('')
 
@@ -31,13 +33,14 @@ const TodoList = () => {
       }
      
     }
-
-    const deleteElement = (todo)=>{
-      console.log(todo)
-      setTodos(todos.filter(del=>del.id!=todo.id))
+    function UpdateStorage(updateElement){
+      setTodos(updateElement) 
+      const newDataString = JSON.stringify(updateElement);
+      localStorage.setItem('List', newDataString);
     }
+
     //storageImage function
-      const image = localStorage.getItem('image');
+    const image = localStorage.getItem('image');
     const handleClick = () => {
       window.open(image, '_blank');
     };
@@ -50,14 +53,13 @@ const TodoList = () => {
             ...item,
             check: !item.check,
           };
-  
-          return updatedItem;
+
+        return updatedItem;
         }
   
-        return item;
-      });
-  
-      setTodos(newList);
+      return item;
+    });
+      UpdateStorage(newList)
     }
 
     // Handle the Enter key press here
@@ -70,10 +72,9 @@ const TodoList = () => {
       localStorage.setItem('List', newDataString);
           setTextVal('')
         }
-        
-      }
-      
+      }    
   }
+
   return (
     <div>
      
@@ -87,12 +88,11 @@ const TodoList = () => {
     {todos &&todos.map(todo=>{
       return (
         <div key={todo.id}>
-        <List full={todo} info={todo.value} taskSave={()=>TaskCheck(todo.id)}  deleteElement={()=>deleteElement(todo)}/>
+        <List full={todo} info={todo.value} taskSave={()=>TaskCheck(todo.id)}  deleteElement={()=>UpdateStorage(todos.filter(del=>del.id!=todo.id))}/>
       </div>
       )
     })}
-   
-    
+  
     </div>
   )
 }
