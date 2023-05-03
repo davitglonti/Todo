@@ -38,8 +38,6 @@ opacity: 1;
     right: 9%;
     width: 25px;
     height: 18px;
-    /* UI Properties */
-    
     opacity: 1;
 }
 .delElement {
@@ -48,15 +46,13 @@ opacity: 1;
     right: 2%;
 width: 24px;
 height: 27px;
-/* UI Properties */
-
 opacity: 1;
 }
 
 
   
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1800px) {
     .todolist {
         position: relative;
        
